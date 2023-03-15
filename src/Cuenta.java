@@ -5,8 +5,15 @@ class Cuenta {
 		String titular;
 		
 		// No retorna valor
-		public void depositar(double saldo) {
-		this.saldo = this.saldo + saldo;
+		public boolean depositar(double saldo) {
+			if (saldo > 0) {
+				this.saldo = this.saldo + saldo;
+				System.out.println("Nuevo deposito: "+ saldo);
+				return true;
+			}else {
+				System.out.println("Lo sentimos no se pudo, intente de nuevo o cambie de cajero");
+				return false;
+			}
 		}
 		
 		public boolean retirar(double valor) {

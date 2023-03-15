@@ -24,7 +24,8 @@ public class PruebaMetodos {
 		System.out.println("Bienvenida "+annionCuenta.titular+
 				" su cuenta fue aperturada con exito y su saldo de apertura es:"+annionCuenta.saldo);
 		annionCuenta.depositar(2000);
-		System.out.println(annionCuenta.titular+ " Depostaste a tu cuenta");
+		//System.out.println(jpCuenta.depositar(500));
+		System.out.println(annionCuenta.titular+ " Depositaste a tu cuenta");
 
 		System.out.println("Estimada "+ annionCuenta.titular + " su saldo es: "+ annionCuenta.saldo);
 		annionCuenta.trasnferir(1500, jpCuenta);
