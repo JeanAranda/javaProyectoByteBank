@@ -2,7 +2,7 @@ class Cuenta {
 		double saldo;
 		int agencia;
 		int numero;
-		String titular;
+		Cliente titular;
 		
 		// No retorna valor
 		public boolean depositar(double saldo) {
@@ -18,7 +18,8 @@ class Cuenta {
 		
 		public boolean retirar(double valor) {
 				if  (this.saldo >= valor) {
-					this.saldo = this.saldo -valor;
+					this.saldo -= valor;
+					//this.saldo = this.saldo -valor;
 					
 					System.out.println("Retiro exitoso!!!");
 					System.out.println(valor);
