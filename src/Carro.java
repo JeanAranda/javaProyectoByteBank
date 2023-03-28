@@ -22,7 +22,26 @@ public class Carro {
 			System.out.println("Bromeas esto sera un posible descuento en soles");
 			this.precio = 35000;
 		}
+		
+		
 	}
+	
+	   public Carro(String modelo, double precio){
+	        this.año = 2017;
+	        if( modelo != null){
+	            this.modelo = modelo;
+	        }else{
+	            System.out.println("El modelo no fue informado. Por eso usaremos Gol!");
+	            this.modelo = "Gol";
+	        }
+
+	        if(precio > 0){
+	            this.precio = precio;
+	        }else{
+	            System.out.println("El precio no es válido. Por eso usaremos 40000.0!");
+	            this.precio = 40000.0;
+
+	        }
 	
 	public int getAño() {
 		return this.año;
